@@ -147,8 +147,14 @@ include_directories(
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
 # add_executable(${PROJECT_NAME}_node src/robot_kinetics_node.cpp)
-set(COG_PUBLISHER_SRC src/cog_publisher_node.cpp src/cog_publisher.cpp src/robot_link.cpp)
-add_executable(cog_publisher_node ${COG_PUBLISHER_SRC})
+# set(COG_PUBLISHER_SRC src/cog_publisher_node.cpp src/cog_publisher.cpp src/robot_link.cpp)
+# add_executable(cog_publisher_node ${COG_PUBLISHER_SRC})
+
+set(FAKE_COG_PUBLISHER_SRC
+  src/fake_cog_publisher_node.cpp
+  src/fake_cog_publisher.cpp
+  )
+add_executable(fake_cog_publisher_node ${FAKE_COG_PUBLISHER_SRC})
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -161,7 +167,10 @@ add_executable(cog_publisher_node ${COG_PUBLISHER_SRC})
 # add_dependencies(${PROJECT_NAME}_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
 ## Specify libraries to link a library or executable target against
-target_link_libraries(cog_publisher_node ${catkin_LIBRARIES} ${BOOST_LIBRARIES})# ${GAZEBO_LIBRARIES})
+# target_link_libraries(cog_publisher_node ${catkin_LIBRARIES} ${BOOST_LIBRARIES})# ${GAZEBO_LIBRARIES})
+
+target_link_libraries(fake_cog_publisher_node ${catkin_LIBRARIES} ${BOOST_LIBRARIES})# ${GAZEBO_LIBRARIES})
+
 
 #############
 ## Install ##
