@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>gazebo_robot_kinetics</name>
-  <version>0.0.0</version>
-  <description>The gazebo_robot_kinetics package</description>
+  <name>robot_kinetics_pkgs</name>
+  <version>0.1.0</version>
+  <description>The robot_kinetics_pkgs package</description>
 
   <maintainer email="ouxt-polaris@example.com">OUXT-Polaris</maintainer>
 
@@ -15,13 +15,10 @@
   <author email="groadpg@gmail.com">Ryodo Tanaka</author>
 
   <buildtool_depend>catkin</buildtool_depend>
-  <depend>roslaunch</depend>
-  <depend>gazebo_ros</depend>
-  <depend>geometry_msgs</depend>
-  <depend>roscpp</depend>
-  <depend>roslib</depend>
-  <depend>rospy</depend>
-  <depend>sensor_msgs</depend>
-  <depend>tf2</depend>
+  <exec_depend>robot_kinetics</exec_depend>
+  <exec_depend>gazebo_robot_kinetics</exec_depend>
 
+  <export>
+    <metapackage/>
+  </export>
 </package>
