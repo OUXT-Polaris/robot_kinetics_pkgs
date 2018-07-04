@@ -57,11 +57,22 @@ include_directories(
   ${EIGEN3_INCLUDE_DIR}
 )
 
-set(COG_PUBLISHER_SRC src/cog_publisher_node.cpp src/cog_publisher.cpp src/robot_link.cpp)
+set(COG_PUBLISHER_SRC
+  src/cog_publisher_node.cpp
+  src/cog_publisher.cpp src/robot_link.cpp
+)
 add_executable(cog_publisher_node ${COG_PUBLISHER_SRC})
+
+set(FAKE_COG_PUBLISHER_SRC
+  src/fake_cog_publisher_node.cpp
+  src/fake_cog_publisher.cpp
+  )
+add_executable(fake_cog_publisher_node ${FAKE_COG_PUBLISHER_SRC})
 
 ## Specify libraries to link a library or executable target against
 target_link_libraries(cog_publisher_node ${catkin_LIBRARIES} ${BOOST_LIBRARIES})# ${GAZEBO_LIBRARIES})
+target_link_libraries(fake_cog_publisher_node ${catkin_LIBRARIES} ${BOOST_LIBRARIES})# ${GAZEBO_LIBRARIES})
+
 
 #############
 ## Install ##

@@ -1,0 +1,5 @@
+publish_frame: "base_link"
+publish_rate: 50
+cog_x: -1.0
+cog_y: 0.0
+cog_z: 1.0
