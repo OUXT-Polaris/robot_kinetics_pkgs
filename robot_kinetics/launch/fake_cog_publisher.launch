@@ -1,0 +1,7 @@
+<launch>
+  
+  <node name="fake_cog_publisher" pkg="robot_kinetics" type="fake_cog_publisher_node" output="screen">
+    <rosparam file="$(find robot_kinetics)/config/wam_v_config.yaml" command="load"/>
+  </node>
+
+</launch>
