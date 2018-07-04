@@ -1,6 +1,10 @@
 # robot_kinetics_pkgs
 ROS packages about robot kinetics(get center of gravity etc..)
 
+|*master*|
+|:---:|
+|[![Build Status](https://travis-ci.org/OUXT-Polaris/robot_kinetics_pkgs.svg?branch=master)](https://travis-ci.org/OUXT-Polaris/robot_kinetics_pkgs)|
+
 # packages and nodes
 - robot_kinetics  
 ├ cog_publisher_node  
