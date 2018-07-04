@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>robot_kinetics_pkgs</name>
+  <version>0.1.0</version>
+  <description>The robot_kinetics_pkgs package</description>
+
+  <maintainer email="ouxt-polaris@example.com">OUXT-Polaris</maintainer>
+
+  <license>GPL</license>
+
+  <url type="repository">http://github.com/OUXT-Polaris/robot_kinetics_pkgs</url>
+  <url type="bugtracker">http://github.com/OUXT-Polaris/robot_kinetics_pkgs/issues</url>
+
+  <author email="masaya@example.com">Masaya Kataoka</author>
+  <author email="groadpg@gmail.com">Ryodo Tanaka</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <exec_depend>robot_kinetics</exec_depend>
+  <exec_depend>gazebo_robot_kinetics</exec_depend>
+
+  <export>
+    <metapackage/>
+  </export>
+</package>
