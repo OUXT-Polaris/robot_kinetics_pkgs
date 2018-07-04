@@ -1,0 +1,4 @@
+- git:
+    local-name: nao_virtual
+    uri: https://github.com/ros-naoqi/nao_virtual.git
+    version: master
